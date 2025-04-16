@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Lieldienu uzdevumi ar atbildēm</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #fdf6e3; }
+        .task { margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
+        .title { font-size: 20px; font-weight: bold; margin-top: 20px; color: #2c3e50; }
+        .story { margin: 10px 0; font-style: italic; }
+        .formula { margin: 10px 0; font-weight: bold; }
+        .questions { margin: 10px 0; }
+        .answer { display: none; margin-top: 10px; background: #ecf0f1; padding: 10px; border-radius: 5px; }
+        button { margin-top: 10px; padding: 5px 10px; cursor: pointer; }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answerDiv = document.getElementById(id);
+            if (answerDiv.style.display === "none") {
+                answerDiv.style.display = "block";
+            } else {
+                answerDiv.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Lieldienu uzdevumi ar atbildēm</h1>
+
+    <div class="task">
+        <div class="title">Zaķis Alberts un olu šūpoles</div>
+        <div class="story">Rīta saulē Alberts nolēma, ka viņa olas ir pelnījušas izšūpoties. Viņš uzbūvēja šūpoles, kur katra kustība bija precīzi aprēķināta – kā parabola!</div>
+        <div class="formula">📐 Funkcijas formula: y = x² - 4x + 6</div>
+        <div class="questions">
+            1. Atrodi virsotni.<br>2. Cik augstu no zemes atrodas šūpoles?<br>3. Cik augstu šūpoles uzšūpinās olas, ja x=4?
+        </div>
+        <button onclick="toggleAnswer('answer0')">Parādīt atbildi</button>
+        <div class="answer" id="answer0">Virsotne: (2;2), pie x=4: y = 4.</div>
+    </div>
+    
+    <div class="task">
+        <div class="title">Zaķenes Lūcijas Olu strūklaka</div>
+        <div class="story">Lūcija vēlējās pārsteigt draugus – viņa uzbūvēja olu strūklaku! Olas lidoja augšup un lejup, veidojot perfekti simetrisku loku.</div>
+        <div class="formula">📐 Funkcijas formula: y = -2x² + 5</div>
+        <div class="questions">
+            1. Aprēķini augstumu pie x = 3.<br>2. Vai ola pacelsies augstāk par 15 vienībām?
+        </div>
+        <button onclick="toggleAnswer('answer1')">Parādīt atbildi</button>
+        <div class="answer" id="answer1">Pie x=3: y = -13. Maksimālais augstums y = 5.</div>
+    </div>
+    
+    <div class="task">
+        <div class="title">Zaķēna Oto olu ripināšana kalna ielejā</div>
+        <div class="story">Oto bija arhitekts – viņš izraka nelielu ieleju un ripināja olas no abām pusēm.</div>
+        <div class="formula">📐 Funkcijas formula: y = 0.5x²</div>
+        <div class="questions">
+            1. Cik augstas ir kalna malas pie x=±4?<br>2. Vai ola sasniegs centru?<br>3. Kāds ir ielejas zemākais punkts?
+        </div>
+        <button onclick="toggleAnswer('answer2')">Parādīt atbildi</button>
+        <div class="answer" id="answer2">Pie x=4: y = 8. Zemākais punkts (0;0).</div>
+    </div>
+    
+    <div class="task">
+        <div class="title">Zaķītes Emīlijas olu basketbols</div>
+        <div class="story">Emīlija bija čempione olu mešanā. Viņa mērķēja tieši grozā.</div>
+        <div class="formula">📐 Funkcijas formula: y = -x² - 2x + 1</div>
+        <div class="questions">
+            1. Augstums pie x = 1?<br>2. Vai ola pārlidos pāri grozam (4 vienības)?
+        </div>
+        <button onclick="toggleAnswer('answer3')">Parādīt atbildi</button>
+        <div class="answer" id="answer3">y(1) = -2. Virsotne: x = -1, y = 2. Ola nepārsniedz 4 vienības – netrāpa grozā.</div>
+    </div>
+    
+    <div class="task">
+        <div class="title">Zaķis Brunis un Lieldienu katapulta</div>
+        <div class="story">Brunis būvēja olu katapultu un ar lepnumu meta pirmo krāsaino olu debesīs.</div>
+        <div class="formula">📐 Funkcijas formula: y = -x² + 6x - 5</div>
+        <div class="questions">
+            1. Atrodi lidojuma virsotni.<br>2. Kur ola piezemēsies (saknes)?
+        </div>
+        <button onclick="toggleAnswer('answer4')">Parādīt atbildi</button>
+        <div class="answer" id="answer4">Virsotne: x = 3, y = 4. Saknes: x = 1 un x = 5.</div>
+    </div>
+    
+    <div class="task">
+        <div class="title">Zaķene Lūcija un lidojošās olas noslēpums</div>
+        <div class="story">Lūcija meta krāsainas olas gaisā ar perfektu trajektoriju.</div>
+        <div class="formula">📐 Funkcijas formula: y = -2x² + 8x</div>
+        <div class="questions">
+            1. Cik max augstu ola pacelsies?<br>2. Kāds ir lidojuma garums (no saknes līdz saknei)?
+        </div>
+        <button onclick="toggleAnswer('answer5')">Parādīt atbildi</button>
+        <div class="answer" id="answer5">Virsotne: x = 2, y = 8. Saknes: x = 0 un x = 4, lidojums ilgst 4 vienības.</div>
+    </div>
+    
+    <div class="task">
+        <div class="title">Zaķēna Bruno olu mešana pāri sētai</div>
+        <div class="story">Bruno izaicināja draugus ar olu mešanas sacensību.</div>
+        <div class="formula">📐 Funkcijas formula: y = -x² + 4x + 1</div>
+        <div class="questions">
+            1. Vai ola sasniedz vismaz y = 5?<br>2. Kāds ir tās augstākais punkts?
+        </div>
+        <button onclick="toggleAnswer('answer6')">Parādīt atbildi</button>
+        <div class="answer" id="answer6">Virsotne: x = 2, y = 5. Jā, ola sasniedz 5 vienības.</div>
+    </div>
+    
+    <div class="task">
+        <div class="title">Zaķenes Klāras lēciens pēc šokolādes olas</div>
+        <div class="story">Klāra palēca pēc šokolādes olas, kas karājās virs viņas.</div>
+        <div class="formula">📐 Funkcijas formula: y = -0.5x² + 3x</div>
+        <div class="questions">
+            1. Kāds ir lēciena augstākais punkts?<br>2. Kurā brīdī Klāra nokrīt zemē (saknes)?
+        </div>
+        <button onclick="toggleAnswer('answer7')">Parādīt atbildi</button>
+        <div class="answer" id="answer7">Virsotne: x = 3, y = 4.5. Saknes: x = 0 un x = 6.</div>
+    </div>
+    
+</body>
+</html>
